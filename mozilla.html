@@ -1,0 +1,66 @@
+<html>
+
+<!--
+
+This is a very simple mockup of the Mozilla home page built as an alternative mini-project for The Odin Project's Web Design 101 curriculum.
+
+I say "alternative" because, normally, the redone website is either the Google home page or the Google Search Results page. This is actually indicated in the assignment, but I misread and thought I could redo *any* website I wanted. Mozilla's looked simple, clean and pretty, and immediately set up a repo with "Mozilla" all over it. 
+
+This will *not* have media queries, any JS, or extremely fancy things. However, I'll try to keep the look and animations as close to the original as possible with the skills I currently possess. I'll also try to make the website "fluid", but without media queries, it'll certainly *not* be responsive.
+
+-->
+
+<head>
+	<title>Internet for people, not profit — Mozilla</title>
+	<meta charset="utf-8">
+	<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div class="nav-header"> <!-- nav header-->
+		<div class="nav-header-container"> <!-- nav header container-->
+			
+			<!-- nav header elements-->
+			<div class="mzlla-icon push-left">
+			</div>	
+			<div class="push-left nav-has-content" id="firefox" onmouseover="contExpand('firefox_cont',500)" onmouseleave="contHide('firefox_cont')">
+				<p>Firefox</p>	
+			</div>
+			<div class="push-left nav-has-content" id="projects" onmouseover="contExpand('projects_cont',500)" onmouseleave="contHide('projects_cont')">
+				<p>Projects</p>	
+			</div>
+			<div class="push-left nav-has-content" id="developers" onmouseover="contExpand('developers_cont',500)" onmouseleave="contHide('developers_cont')">
+				<p>Developers</p>	
+			</div>
+			<div class="push-left nav-has-content" id="about" onmouseover="contExpand('about_cont',500)" onmouseleave="contHide('about_cont')">
+				<p>About</p>	
+			</div>
+
+
+		</div>
+	</div>
+	<div class="main-cont">
+		
+	</div>
+	
+	<div class="nav-cont" id="firefox_cont">
+		<p>Firefox!</p>
+	</div>
+	<div class="nav-cont" id="projects_cont">
+		<p>Projects!</p>
+	</div>
+	<div class="nav-cont" id="developers_cont">
+		<p>Developers!</p>
+	</div>
+	<div class="nav-cont" id="about_cont">
+		<p>About!</p>
+	</div>
+
+
+
+	<div class="nav-cont-elem-fat-sm">
+	</div>
+
+<script src="expand.js" type="text/javascript"></script>
+</body>
+
+</html>	
