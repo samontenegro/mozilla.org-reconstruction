@@ -15,33 +15,35 @@ This will *not* have media queries, any JS, or extremely fancy things. However, 
 	<meta charset="utf-8">
 	<link href="style.css" type="text/css" rel="stylesheet">
 </head>
-<body>
+<body onload="set_att('js-expandable')">
 	<div class="nav-header"> <!-- nav header-->
 		<div class="nav-header-container"> <!-- nav header container-->
 			
 			<!-- nav header elements-->
 			<div class="mzlla-icon push-left">
 			</div>	
-			<div class="push-left nav-has-content" id="firefox" onmouseover="contExpand('firefox_cont',500)" onmouseleave="contHide('firefox_cont')">
+			<div class="js-expandable push-left nav-has-content" id="firefox">
 				<p>Firefox</p>	
 			</div>
-			<div class="push-left nav-has-content" id="projects" onmouseover="contExpand('projects_cont',500)" onmouseleave="contHide('projects_cont')">
+			<div class="js-expandable push-left nav-has-content" id="projects">
 				<p>Projects</p>	
 			</div>
-			<div class="push-left nav-has-content" id="developers" onmouseover="contExpand('developers_cont',500)" onmouseleave="contHide('developers_cont')">
+			<div class="js-expandable push-left nav-has-content" id="developers">
 				<p>Developers</p>	
 			</div>
-			<div class="push-left nav-has-content" id="about" onmouseover="contExpand('about_cont',500)" onmouseleave="contHide('about_cont')">
+			<div class="js-expandable push-left nav-has-content" id="about">
 				<p>About</p>	
 			</div>
-
+			<a href="#" class="push-right download-button"><strong class="download-button-text">Download Firefox</strong></a>
 
 		</div>
 	</div>
 	<div class="main-cont">
-		
+		<div style="background-color: blue; height: 200px">
+
+		</div>
 	</div>
-	
+
 	<div class="nav-cont" id="firefox_cont">
 		<p>Firefox!</p>
 	</div>
