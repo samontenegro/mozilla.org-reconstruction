@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 @keyframes hov-animation {
 	from {
 		border-bottom: solid 0;
@@ -93,7 +95,7 @@ a.download-button strong.download-button-text {
 
 a.download-button:hover {
 	animation-name: dw-btn-ani;
-	animation-duration: 0.2s;
+	animation-duration: 0.15s;
 	animation-iteration-count: 1;
 	animation-delay: 0;
 	animation-fill-mode: both;
@@ -102,20 +104,26 @@ a.download-button:hover {
 
 a.download-button:hover strong.download-button-text {
 	animation-name: dw-btn-st-ani;
-	animation-duration: 0.2s;
+	animation-duration: 0.15s;
 	animation-iteration-count: 1;
 	animation-delay: 0;
 	animation-fill-mode: both;
 }
 
-.mzlla-icon {
-	width: 70px; 
+a.mzlla-icon {
+	width: 112px; 
 	height: auto;
-	background-image: url("Mozilla_logo.svg");
+	background-image: url("img/Mozilla_logo.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-right: 2%;
+	margin-top: 22px;
+	text-decoration: none;
+}
+
+a.mzlla-icon p{
+	color: transparent;	
 }
 
 .nav-cont {
@@ -127,12 +135,46 @@ a.download-button:hover strong.download-button-text {
 	overflow: hidden;
 }
 
-.main-cont {
+.primary-cont {
 	position: relative;
-	padding: 0 0 0 0;
+	padding: 24px 96px 24px 96px;
 	margin: 0 0 0 0;
-	height: auto;
-	background-color: #b7f2ff;
+	height: 424px;
+	background-color: rgb(110, 203, 255);
+	background-image: url("img/banner-ffyr.3d05703c2b59.png");
+	background-size: 720px 350px;
+	background-repeat: no-repeat;
+	background-position: 560px bottom;
+}
+
+.primary-cont-wrapper {
+	width: 520px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+h2.primary-title {
+	background-image: url("img/logo-quantum.9c5e96634f92.png");
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	padding-left: 48px;
+	margin-bottom: 48px;
+	margin-top: 0;
+	background-size: 40px 40px;
+	line-height: 40px;
+	font-weight: normal;
+}
+
+h3.primary-title-sub {
+	font-size: 60px;
+	line-height: 64px;
+	font-weight: 700;
+	margin: 0 0 8px 0;	
+}
+
+p.primary-desc-sub {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 
 .nav-cont p {
@@ -146,5 +188,6 @@ a.download-button:hover strong.download-button-text {
 	border-radius: 5px;
 	border: solid 2px gray;
 }
+
 
 
