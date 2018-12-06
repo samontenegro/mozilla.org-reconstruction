@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-@keyframes hov-animation {
+@keyframes hov-animation { /* Hov animation for nav elems*/
 	from {
 		border-bottom: solid 0;
 	}
@@ -10,7 +10,7 @@
 	}
 }
 
-@keyframes dw-btn-ani {
+@keyframes dw-btn-ani { /* Download button BG color animation*/
 	from {
 		background-color: white;
 		border: solid 2px blue;
@@ -22,10 +22,17 @@
 	}
 }
 
-@keyframes dw-btn-st-ani {
+@keyframes dw-btn-st-ani { /* Download button text color animation*/
 	from{color :blue;}
 	to{color: white;}
 }
+
+@keyframes primary-dw-btn-ani { /* Primary content download button color animation*/
+	from {background-color: rgb(0, 96, 223);}
+	to {background-color: #003eaa;}
+}
+
+
 
 body {
 	font-family: "Open Sans", sans-serif;
@@ -82,15 +89,15 @@ a.download-button {
 	padding: 8px 16px 8px 16px;
 	border: solid 2px blue;
 	position: relative;
+	text-align: center;
+	text-decoration: none;
 }
 
 a.download-button strong.download-button-text {
 	color: blue;
 	font-weight: 500;
-	text-decoration: none;
-	text-decoration-line: none;
-	position: absolute;
-	top: 10px;
+	/* position: absolute; */	
+	line-height: 24px;
  }
 
 a.download-button:hover {
@@ -189,5 +196,49 @@ p.primary-desc-sub {
 	border: solid 2px gray;
 }
 
+.primary-dw-button-container {
+	margin: 24px 0 24px 0;
+	height: 88px;
+	width: 205px;
+}
 
+a.primary-dw-button {
+	display: block;
+	height: 56px;
+	width: 205px;
+	background-color: rgb(0, 96, 223); 
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
 
+a.primary-dw-button strong.dw-btn-text {
+	color: white;
+	font-weight: bold;
+	line-height: 56px;
+	text-align: center;
+}
+
+a.primary-dw-button:hover {
+	animation: primary-dw-btn-ani;
+	animation-duration: 0.15s;
+	animation-iteration-count: 1;
+	animation-delay: 0;
+	animation-fill-mode: both;
+}
+
+small.dw-firefox-notice {
+	display: block;
+	height: 16px;
+	margin: 16px 0 0 0;
+	text-align: center;
+}
+
+a.privacy-notice-link {
+	text-decoration: none;
+	color: black;
+}
+
+a.privacy-notice-link:hover {
+	text-decoration: underline;
+}
