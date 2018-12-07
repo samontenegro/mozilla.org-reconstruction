@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:500,600,700');
+
+
 
 @keyframes hov-animation { /* Hov animation for nav elems*/
 	from {
@@ -8,6 +11,11 @@
 	to {
 		border-bottom: solid 1px;
 	}
+}
+
+@keyframes card-hov-animation { /* Border hov animation for card elements*/
+	from {border: solid 4px transparent;}
+	to {border: solid 4px rgb(230,230,230);}
 }
 
 @keyframes dw-btn-ani { /* Download button BG color animation*/
@@ -242,3 +250,98 @@ a.privacy-notice-link {
 a.privacy-notice-link:hover {
 	text-decoration: underline;
 }
+
+div.mzlla-content {
+	width: 100%;
+	height: 5652px;
+	margin: 24px 0 0 0;
+}
+
+div.mzlla-l-content{
+	margin: 0 auto 0 auto;
+	padding: 24px 96px 24px 96px;
+}
+
+div.mzlla-c-container {
+	width: 100%;
+	height: 1007px;
+}
+
+a.mzlla-c-block-link {
+	display: block;
+	float: left;
+	height: 100%;
+	width: 100%;
+	border-radius: 2px;
+	text-decoration: none;
+	border: solid 4px transparent;
+}
+
+div.mzlla-c-card-l {
+	width: calc(66% - 10px);
+	height: 569px;
+	margin: 0 32px 32px 0;
+	box-sizing: border-box;
+}
+
+div.mzlla-c-card-l-media {
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+	width: auto;
+	height: 426px;
+	background-image: url(img/ffyr.9b59525acb90.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+div.mzlla-c-card-content {
+	height: 143px;
+	width: 100%;
+	padding: 8px 8px 8px 8px;
+}
+
+div.mzlla-c-card-tag {
+	padding-left: 32px;
+	line-height: 25.2px;
+	font-size: 14px;
+	height: auto;
+	background-image: url(img/video.d531e6792e7f.svg);
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	color: rgb(74, 74, 79);
+	position: relative;
+	margin-bottom: 4px;
+}
+
+h2.mzlla-c-card-title {
+	font-family: "Zilla Slab", "Open Sans", sans-serif;
+	color: black;
+	font-size: 36px;
+	margin: 0 0 0 0;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+p.mzlla-c-card-desc {
+	color: black;
+	font-size: 18px;
+	margin-top: 4px;
+}
+
+a.mzlla-c-block-link:hover h2.mzlla-c-card-title span {
+	border-bottom: solid 2px;
+}
+
+a.mzlla-c-block-link:hover {
+	animation-name: card-hov-animation;
+	animation-duration: 0.25s;
+	animation-iteration-count: 1;
+	animation-delay: 0;
+	animation-fill-mode: forwards;
+}
+
+div.mzlla-c-card {
+	height: 1000px;
+}
+
+/* DOESNT WORK! HOVER BORDER MOVES SHIT*/
