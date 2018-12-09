@@ -263,13 +263,13 @@ div.mzlla-l-content{
 }
 
 div.mzlla-c-container {
+	display: block;
 	width: 100%;
-	height: 1007px;
+	height: 1000px;
 }
 
 a.mzlla-c-block-link {
 	display: block;
-	float: left;
 	height: 100%;
 	width: 100%;
 	border-radius: 2px;
@@ -277,8 +277,11 @@ a.mzlla-c-block-link {
 	border: solid 4px transparent;
 }
 
-div.mzlla-c-card-l {
-	width: calc(66% - 10px);
+div.mzlla-c-container div.mzlla-c-card-l {
+	position: relative;
+	display: block;
+	float: left;
+	width: 751px;
 	height: 569px;
 	margin: 0 32px 32px 0;
 	box-sizing: border-box;
@@ -289,10 +292,13 @@ div.mzlla-c-card-l-media {
 	border-top-left-radius: 2px;
 	width: auto;
 	height: 426px;
-	background-image: url(img/ffyr.9b59525acb90.png);
-	background-repeat: no-repeat;
-	background-size: contain;
 }
+
+img.mzlla-c-card-l-img {
+	width: 100%;
+	height: 426px;
+}
+
 
 div.mzlla-c-card-content {
 	height: 143px;
@@ -300,7 +306,7 @@ div.mzlla-c-card-content {
 	padding: 8px 8px 8px 8px;
 }
 
-div.mzlla-c-card-tag {
+div.mzlla-c-card-l div.mzlla-c-card-tag {
 	padding-left: 32px;
 	line-height: 25.2px;
 	font-size: 14px;
@@ -313,7 +319,7 @@ div.mzlla-c-card-tag {
 	margin-bottom: 4px;
 }
 
-h2.mzlla-c-card-title {
+div.mzlla-c-card-l h2.mzlla-c-card-title {
 	font-family: "Zilla Slab", "Open Sans", sans-serif;
 	color: black;
 	font-size: 36px;
@@ -322,7 +328,7 @@ h2.mzlla-c-card-title {
 	line-height: 40px;
 }
 
-p.mzlla-c-card-desc {
+div.mzlla-c-card-l p.mzlla-c-card-desc {
 	color: black;
 	font-size: 18px;
 	margin-top: 4px;
@@ -340,8 +346,149 @@ a.mzlla-c-block-link:hover {
 	animation-fill-mode: forwards;
 }
 
-div.mzlla-c-card {
-	height: 1000px;
+div.mzlla-c-container div.mzlla-c-card-sq {
+	position: relative;
+	float: left;
+	display: block;
+	width: 362px;
+	height: 532px;
+	margin: 0 32px 32px 0;
+	box-sizing: border-box;
+	margin: 0 0 69px 0;
 }
 
-/* DOESNT WORK! HOVER BORDER MOVES SHIT*/
+div.mzlla-c-card-sq-media {
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+	width: 100%;
+	height: 362px;
+}
+
+img.mzlla-c-card-sq-img {
+	width: 100%;
+	height: 362px;
+}
+
+div.mzlla-c-card-sq div.mzlla-c-card-tag {
+	line-height: 25.2px;
+	font-size: 14px;
+	height: auto;
+	color: rgb(74, 74, 79);
+	position: relative;
+	margin-bottom: 4px;
+}
+
+div.mzlla-c-card-sq h2.mzlla-c-card-title {
+	font-family: "Zilla Slab", "Open Sans", sans-serif;
+	color: black;
+	font-size: 24px;
+	margin: 0 0 0 0;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+div.mzlla-c-card-sq p.mzlla-c-card-desc {
+	color: black;
+	font-size: 16px;
+	margin-top: 4px;
+}
+
+div.mzlla-c-container div.mzlla-c-card-169 {
+	position: relative;
+	float: left;
+	display: block;
+	width: 362px;
+	height: auto;
+	margin: 0 32px 0 0;
+}
+
+div.mzlla-c-card-169-media {
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+	width: 100%;
+	height: auto;
+}
+
+img.mzlla-c-card-169-img {
+	width: 100%;
+	height: auto;
+}
+
+div.mzlla-c-card-content {
+	box-sizing: border-box;
+	height: auto;
+}
+
+div.mzlla-c-card-169 div.mzlla-c-card-tag {
+	line-height: 25.2px;
+	font-size: 14px;
+	height: auto;
+	color: rgb(74, 74, 79);
+	position: relative;
+	margin-bottom: 4px;
+}
+
+div.mzlla-c-card-169 h2.mzlla-c-card-title {
+	font-family: "Zilla Slab", "Open Sans", sans-serif;
+	color: black;
+	font-size: 24px;
+	margin: 0 0 0 0;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+div.mzlla-c-card-169 p.mzlla-c-card-desc {
+	color: black;
+	font-size: 16px;
+	margin: 0 0 0 0;
+	box-sizing: border-box;
+}
+
+div.mzlla-c-container div.mzlla-c-card-169:last-child {
+	margin-right: 0px;
+}
+
+div.mzlla-c-billboard {
+	width: inherit;
+	height: 268px;
+	margin: 96px 0 96px 0;
+	background-color: rgb(237, 237, 240);;
+}
+
+div.mzlla-c-bb-img-container {
+	float: left;
+	display: block;
+	text-align: center;
+	margin-left: 186.5px;
+	margin-top: -42px;
+	margin-bottom: -42px;
+}
+
+div.mzlla-c-bb-content {
+	height: 100%;
+	width: 374px;
+	margin-left: auto;
+	margin-right: 186.5px;
+	padding: 24px 8px 24px 8px;
+
+}
+
+div.mzlla-c-bb-content h2.mzlla-c-bb-content-title {
+	text-align: center;
+	font-family: "Zilla Slab", "Open Sans", sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	margin-bottom: 16px;
+}
+
+div.mzlla-c-bb-content p.mzlla-c-bb-content-desc{
+	text-align: center;
+	padding: 0 8px 0 8px;
+	margin: 0 0 20px 0;
+}
+
+div.mzlla-c-bb-content a {
+	margin-left: auto;
+	margin-right: auto;
+}
+
