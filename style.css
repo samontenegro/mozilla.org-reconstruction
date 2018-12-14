@@ -41,6 +41,14 @@
 }
 
 
+@keyframes nw-btn-ani {
+	from {}
+	to {
+		box-shadow: 3px 3px black;
+		background-color: white;
+		color: black;
+	}
+}
 
 body {
 	font-family: "Open Sans", sans-serif;
@@ -504,7 +512,9 @@ div.mzlla-c-bb-content a.mzlla-c-bb-link {
 	font-weight: 700;
 }
 
-
+div.mzlla-c-bb-content a.mzlla-c-bb-link:hover {	
+	border-bottom: solid 2px black
+}
 
 /* 169-half */
 
@@ -705,6 +715,10 @@ div.mzlla-c-bb-content-left a.mzlla-c-bb-link {
 	font-weight: 700;
 }
 
+div.mzlla-c-bb-content-left a.mzlla-c-bb-link:hover {	
+	border-bottom: solid 2px black;
+}
+
 /* Billboard left */
 
 div.mzlla-c-container:nth-of-type(3) div.mzlla-c-card-169:nth-of-type(3) {
@@ -715,3 +729,109 @@ div.mzlla-c-container:nth-of-type(3) {
 	height: 850px;
 }
 
+aside.mzlla-c-newsletter {
+	display: block;
+	padding: 48px 160px 48px 160px;
+	margin: 0 auto 24px auto;
+	width: 833px;
+	height: 361px;
+}
+
+div.mzlla-c-nw-img {
+	width: 400.5px;
+	height: 337px;
+	margin: 0 0px 0 0;
+	text-align: center;
+	display: block;
+	float: left;
+	margin: 0 32px 0 0;
+}
+
+div.mzlla-c-nw-content {
+	width: 400.5px;
+	height: 337px;
+	margin: 0 0px 0 0;
+	text-align: left;
+	display: block;
+	float: left;
+}
+
+
+form.mzlla-c-nw-form {
+	width: 400.5px;
+	height: 297px;
+	padding: 64px 0 0 0;
+}
+
+form.mzlla-c-nw-form h2.mzlla-c-nw-f-h2 {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 40px;
+	font-family: 'Zilla Slab', 'Open Sans', sans-serif;
+	margin: 0 0 9px 0;
+}
+
+form.mzlla-c-nw-form p.mzlla-c-nw-f-tag {
+	margin: 0 0 20px 0;
+}
+
+form.mzlla-c-nw-form p.mzlla-c-nw-f-fs-tag{
+	margin: 0 0 20px 0;
+}
+
+fieldset.mzlla-c-nw-f-fs p label{
+	font-weight: bold;
+}
+
+fieldset.mzlla-c-nw-f-fs {
+	border: none;
+	padding: 0 0 0 0;
+}
+
+fieldset.mzlla-c-nw-f-fs p {
+	margin: 0 0 4px 0;
+}
+
+fieldset.mzlla-c-nw-f-fs input.mzlla-c-nw-f-email {
+	display: block;
+	width: 384.5px;
+	color: gray;
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 4px;
+}
+
+fieldset.mzlla-c-nw-f-fs button.mzlla-c-nw-f-fs-btn {
+	width: 100%;
+	height: 56px;
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+	border: solid 2px black;
+	border-radius: 2px;
+	margin-bottom: 8px;
+}
+
+p.mzlla-c-nw-f-fs-submit {
+	text-align: center;
+}
+
+button.mzlla-c-nw-f-fs-btn:hover {
+	animation-name: nw-btn-ani;
+	animation-duration: 0.15s;
+	animation-iteration-count: 1;
+	animation-delay: 0;
+	animation-fill-mode: both;
+}
+
+span.mzlla-c-nw-f-fs-note {
+	display: inline-block;
+	color: gray;
+	font-size: 14px;
+	line-height: 18px;
+}
